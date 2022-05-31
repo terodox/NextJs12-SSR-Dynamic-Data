@@ -25,6 +25,7 @@ export default function Home() {
         <Image
         src={paris}
         alt="paris"
+        placeholder="blur"
         // width={500} automatically provided
         // height={500} automatically provided
         // blurDataURL="data:..." automatically provided
