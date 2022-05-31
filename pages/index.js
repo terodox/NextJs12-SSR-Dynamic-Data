@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-
+import paris from '../public/paris.png'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -21,9 +21,8 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <Image src="/../public/paris.png"           width={500}
-        height={500}    alt="Picture of the author" priority 
- />
+        <Image src={paris}           width={500}
+        height={500}    alt="Picture of the author"/>
 
 
         <div className={styles.grid}>
