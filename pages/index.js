@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-// import paris from '../public/paris.png'
+import paris from '../public/paris.png'
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-{/* 
+
         <Image
         src={paris}
         alt="paris"
@@ -30,7 +30,7 @@ export default function Home() {
         // height={500} automatically provided
         // blurDataURL="data:..." automatically provided
         // placeholder="blur" // Optional blur-up while loading
-      /> */}
+      />
 
 
         <div className={styles.grid}>
