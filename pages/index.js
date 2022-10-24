@@ -2,13 +2,19 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import paris from '../public/paris.png'
+import { GUID } from './guid';
 
 export async function getServerSideProps() {
   // Pass data to the page via props
-  return { props: { data: (new Date()).toISOString() } }
+  return {
+    props: {
+      data: (new Date()).toISOString(),
+      guid: GUID
+    }
+  };
 }
 
-export default function Home({ data }) {
+export default function Home({ data, guid }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,7 +25,9 @@ export default function Home({ data }) {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a> {data}
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          <p>{data}</p>
+          <p>Guid changed by canary: {guid}</p>
         </h1>
 
         <p className={styles.description}>
