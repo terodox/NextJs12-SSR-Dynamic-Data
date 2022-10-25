@@ -1,0 +1,1 @@
+export const GUID = 'THIS IS A GUID';
